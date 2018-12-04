@@ -1,7 +1,7 @@
 <h5>Enter Your Information Below</h5>
 
 <% @fields.each do |field| %>
-<p><%= field %></p>
+<label type="text" name="<%= field %>"><%= field %></label>
 <input type="text" name ="<%= field %>" id="<%= field %>"
 class="fancy_form" >
 <% end %>
